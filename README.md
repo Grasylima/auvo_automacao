@@ -133,7 +133,7 @@ npx playwright show-report
 
 ---
 
-## Decisões e Suposições Técnicas
+## Informações
 
 - O site `https://www.saucedemo.com/` não possui busca textual, portanto o teste de pesquisa foi interpretado como **filtragem/seleção de produto**.  
 - Foi adotado o padrão **Page Object Model (POM)** para garantir isolamento de responsabilidades entre páginas.  
@@ -145,7 +145,7 @@ npx playwright show-report
 
 ---
 
-## 🧾 Exemplo de Execução com Log
+## Exemplo de Execução com Log
 
 ```bash
 npx playwright test tests/fluxoCompra.spec.js --headed --slow-mo 500
@@ -153,7 +153,7 @@ npx playwright test tests/fluxoCompra.spec.js --headed --slow-mo 500
 
 ---
 
-## 📊 Relatórios e Logs
+## Relatórios e Logs
 
 O Playwright gera automaticamente relatórios de execução:
 
@@ -164,16 +164,11 @@ O Playwright gera automaticamente relatórios de execução:
 
 ## Autora
 
-**👩 Grasielle Lima**  
-💼 QA Engineer / Test Automation  
+** 👩 Grasielle Lima**  
+💼 QA  / Test Automation  
 🔗 [GitHub – Grasylima](https://github.com/Grasylima)  
 💌 [Contato profissional](mailto:grasielle.lima@gmail.com)
 
 ---
 
-## 📸 Resultado Esperado
-
-> 💡 Dica: Inclua aqui um print do relatório HTML do Playwright após a execução dos testes.
->
-> ![Exemplo de execução Playwright](docs/demo-run.png)
 
