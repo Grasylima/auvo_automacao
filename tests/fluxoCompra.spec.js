@@ -13,12 +13,11 @@ test('Fluxo completo de compra', async ({ page }) => {
   // Login
   await loginPage.visitar();
   await loginPage.fazerLogin('standard_user', 'secret_sauce');
-  await page.pause(); // pausa para inspeção
   await loginPage.clicarNoBotaoSubmit();
+ // await page.pause(); // pausa para inspeção
 
   // Adicionar produto
   await productsPage.addProductToCart('Sauce Labs Backpack');
-  await page.pause();
   await productsPage.goToCart();
 
   // Carrinho
@@ -26,8 +25,8 @@ test('Fluxo completo de compra', async ({ page }) => {
 
   // Checkout
   await checkoutPage.preencherInformacoes('Grasielle', 'Lima', '70000-000');
-  await page.pause();
   await checkoutPage.finalizarPedido();
+ // await page.pause();
 
   // Validação final
   await expect(page.locator('.complete-header')).toHaveText('Thank you for your order!');
