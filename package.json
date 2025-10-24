@@ -1,0 +1,19 @@
+{
+  "name": "auvo_automacao",
+  "version": "1.0.0",
+  "description": "Teste prático Auvo",
+  "main": "index.js",
+  "scripts": {
+     "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "install:browsers": "npx playwright install"
+  },
+  "keywords": [],
+  "author": "Grasielle Lima",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  }
+}
