@@ -170,6 +170,3 @@ O Playwright gera automaticamente relatórios de execução:
 💌 [Contato profissional](mailto:grasielle.lima@gmail.com)
 
 ---
-
-
-
